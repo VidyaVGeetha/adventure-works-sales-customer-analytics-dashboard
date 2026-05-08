@@ -357,7 +357,8 @@ Several professional dashboard design improvements were implemented:
 
 # Dashboard Preview
 
-(Add dashboard screenshot here)
+<img width="1210" height="675" alt="image" src="https://github.com/user-attachments/assets/26df92e5-94d6-4907-ab4f-c939328f6043" />
+
 
 ---
 
