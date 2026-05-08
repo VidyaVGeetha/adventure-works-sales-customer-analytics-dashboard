@@ -1,48 +1,90 @@
+# Repository Name
+
+adventure-works-executive-sales-analytics-dashboard
+
+---
+
+# Project Title
+
+Adventure Works Executive Sales & Customer Analytics Dashboard
+
+---
+
+# Repository Description
+
+Interactive executive-level Power BI dashboard built using the Adventure Works dataset to analyze sales performance, customer insights, payment behavior, product category trends, KPI metrics, and operational order activity using DAX, data modeling, and business intelligence reporting techniques.
+
+---
+
 # Adventure Works Executive Sales & Customer Analytics Dashboard
 
 ## Project Overview
 
-This project is an Executive Sales and Customer Analytics Dashboard developed in Power BI using the Adventure Works dataset.
+This project is an interactive Executive Sales & Customer Analytics Dashboard developed in Power BI using the Adventure Works dataset.
 
-The dashboard was designed to help business executives monitor:
+The dashboard was designed to help business executives monitor and analyze:
 - Sales performance
 - Customer distribution
-- Product category trends
+- Product category performance
 - Payment method behavior
 - Order pipeline activity
-- Sales performance over time
+- Sales trends over time
+- Average order value performance
+- Month-over-month sales growth
 
-The objective of this project was to transform raw transactional sales data into meaningful business insights using interactive Power BI visualizations and analytical reporting techniques.
+The main objective of this project was to transform raw transactional sales data into meaningful business insights using interactive visualizations, DAX calculations, KPI reporting, and executive-level analytics.
 
 ---
 
 # Business Scenario
 
-Adventure Works executives required a centralized dashboard to:
-- Monitor company-wide sales performance
+Adventure Works executives required a centralized analytical dashboard to:
+- Monitor overall business performance
+- Track revenue growth and sales fluctuations
 - Understand customer purchasing behavior
-- Analyze sales contribution by product category
-- Track payment method usage
+- Analyze product category performance
 - Monitor operational order status
-- Identify sales trends and business opportunities
+- Evaluate payment method trends
+- Support executive-level business decision-making
 
-The dashboard was designed for executive-level decision-making with a clean, interactive, and business-focused reporting experience.
+The dashboard was designed to provide a clean, interactive, and business-focused reporting experience for executives and stakeholders.
 
 ---
 
 # Dashboard Features
 
-## KPI Cards
+## Executive KPI Cards
+
 The dashboard includes KPI cards for:
 - Total Sales (£173.7K)
 - Total Customers (48)
-- Number of Cities (14)
+- Total Cities (14)
+- Average Order Value (AOV)
+- Month-over-Month Growth %
 
-These KPIs provide quick executive-level performance summaries.
+These KPIs provide quick executive-level business summaries and performance tracking.
 
 ---
 
-## Sales Trend Analysis
+# DAX Measures Created
+
+Several business-focused DAX measures were created to support KPI reporting, time intelligence analysis, and business performance tracking.
+
+| Measure | Purpose |
+|---|---|
+| Total Sales | Calculates overall sales revenue |
+| Total Orders | Counts total orders |
+| Total Customers | Counts unique customers |
+| Total Cities | Counts customer locations |
+| Sales YTD | Calculates year-to-date sales |
+| Previous Month Sales | Tracks previous month sales |
+| AOV (Average Order Value) | Calculates average revenue per order |
+| MoM Growth % | Measures month-over-month sales growth |
+
+---
+
+# Sales Trend Analysis
+
 A line chart was created to analyze:
 - Daily sales movement
 - High and low sales periods
@@ -50,21 +92,24 @@ A line chart was created to analyze:
 
 An average benchmark line was implemented to compare daily sales performance against overall average sales.
 
-### Key Trend Insights
+## Key Trend Insights
 - March recorded the highest sales peak (£15.6K).
 - April showed lower sales volatility compared to March.
 - Daily sales fluctuated significantly around the average benchmark line.
+- Sales performance remained highly dynamic throughout the reporting period.
 
 ---
 
-## Sales by Product Category
-A clustered column chart was used to compare revenue performance across product categories.
+# Sales by Product Category
+
+A clustered column chart was created to compare revenue performance across product categories.
 
 Additional tooltips included:
 - Order Quantity
 - Product Weight
 
-### Product Category Insights
+## Product Category Insights
+
 | Product Category | Total Sales |
 |---|---|
 | Mountain Bikes | £63.5K |
@@ -75,35 +120,40 @@ Additional tooltips included:
 | BMX Bikes | £1.8K |
 | Kids Bikes | £0.5K |
 
-### Business Findings
+## Business Findings
 - Mountain Bikes generated the highest revenue contribution.
-- Road Bikes ranked second in overall sales.
-- Kids Bikes generated the lowest sales revenue.
+- Road Bikes ranked second in overall sales performance.
+- Kids Bikes generated the lowest revenue contribution.
+- Premium bike categories dominated total company revenue.
 
 ---
 
-## Sales Distribution by Payment Method
+# Sales Distribution by Payment Method
+
 A donut chart was used to analyze:
 - Revenue contribution by payment method
 - Customer payment preferences
 
-### Payment Method Insights
+## Payment Method Insights
+
 | Payment Method | Contribution |
 |---|---|
 | Credit Card | 54.35% |
 | PayPal | 45.65% |
 
-### Monthly Payment Trend Insights
+## Monthly Payment Trend Insights
 - Credit Card usage dominated sales during January, February, and March.
 - PayPal usage increased significantly during April.
 - April recorded the highest PayPal contribution (60.94%).
 
 ---
 
-## Customer and City Analysis
-Customer distribution and revenue contribution by city were analyzed.
+# Customer and City Analysis
 
-### Customer & Sales Insights by City
+Customer distribution and revenue contribution by city were analyzed to understand customer concentration and regional sales performance.
+
+## Customer & Sales Insights by City
+
 | City | Customers | Total Sales |
 |---|---|---|
 | Los Angeles | 9 | £27.4K |
@@ -112,21 +162,55 @@ Customer distribution and revenue contribution by city were analyzed.
 | Baldwin Park | 3 | £13.5K |
 | Eureka | 4 | £12.7K |
 
-### Business Findings
-- Los Angeles generated the highest sales revenue and customer count.
+## Business Findings
+- Los Angeles generated the highest customer count and sales revenue.
 - Bellflower showed strong sales performance despite a smaller customer base.
 - Smaller cities like Berkeley generated high sales with fewer customers, indicating higher-value purchases.
 
 ---
 
-## Order Pipeline Overview
+# KPI Insights
+
+## Average Order Value (AOV)
+
+| Month | AOV (£) |
+|---|---|
+| January | £2.50 |
+| February | £4.19 |
+| March | £3.20 |
+| April | £3.20 |
+
+### AOV Findings
+- February recorded the highest average order value.
+- Customer purchasing value increased significantly from January to February.
+- AOV stabilized during March and April.
+
+---
+
+## Month-over-Month Growth %
+
+| Month | MoM Growth % |
+|---|---|
+| February | 9.63% |
+| March | -0.08% |
+| April | -0.083% |
+
+### Growth Findings
+- February showed strong positive business growth.
+- March and April recorded slight negative growth trends.
+- Sales momentum slowed after February's performance peak.
+
+---
+
+# Order Pipeline Overview
+
 A table visualization was created to monitor:
 - Product details
 - Order IDs
 - Order status
 - Revenue values
 
-### Order Status Insights
+## Order Status Insights
 - Most orders were successfully shipped.
 - Cancelled orders were minimal.
 - PayPal was heavily used for processing-stage orders.
@@ -145,15 +229,17 @@ Dashboard interactions were optimized to:
 - Keep KPI cards stable
 - Prevent unnecessary cross-filtering
 - Improve executive usability
+- Enhance interactive analysis
 
 ---
 
 # Data Modeling
 
 A dedicated Date Table was created using DAX to support:
-- Time intelligence
+- Time intelligence calculations
 - Proper month sorting
 - Trend analysis
+- Time-based filtering
 
 ## Date Table DAX
 
@@ -177,13 +263,13 @@ The Month column was sorted using MonthNumber to ensure chronological month orde
 
 # Data Validation and Quality Checks
 
-Several validation and cleaning steps were performed during dashboard development.
+Several validation and cleaning steps were performed during dashboard development to improve reporting accuracy and consistency.
 
 ## Data Type Validation
 
 Validated and corrected:
 - Date fields
-- Currency values
+- Currency fields
 - Whole number fields
 - Decimal values
 
@@ -206,6 +292,7 @@ This improved:
 - Time analysis
 - Filtering consistency
 - Reporting accuracy
+- Visual performance
 
 ---
 
@@ -218,6 +305,7 @@ Validated:
 - Chart aggregations
 - Month sorting behavior
 - Visual interaction behavior
+- DAX calculation outputs
 
 ---
 
@@ -232,6 +320,7 @@ Several professional dashboard design improvements were implemented:
 - Optimized visual titles
 - Reduced visual clutter
 - Professional light-gray dashboard canvas background
+- Stable KPI interaction behavior
 
 ---
 
@@ -239,9 +328,12 @@ Several professional dashboard design improvements were implemented:
 
 - Power BI Desktop
 - DAX
+- Excel
+- SQL
+- Python
 - Data Modeling
-- Interactive Dashboard Design
 - Data Visualization
+- Interactive Dashboard Design
 - Business Intelligence Reporting
 
 ---
@@ -252,6 +344,8 @@ Several professional dashboard design improvements were implemented:
 - Data Validation
 - Data Modeling
 - DAX Calculations
+- KPI Development
+- Time Intelligence Analysis
 - Dashboard Design
 - Executive Reporting
 - Business Intelligence Analytics
@@ -263,8 +357,7 @@ Several professional dashboard design improvements were implemented:
 
 # Dashboard Preview
 
-<img width="1213" height="679" alt="image" src="https://github.com/user-attachments/assets/1ee73f88-a310-4163-994f-9023f0f7ffbc" />
-
+(Add dashboard screenshot here)
 
 ---
 
@@ -277,3 +370,7 @@ Aspiring Data Analyst focused on:
 - Data Analytics
 - Business Intelligence
 - Dashboard Development
+- Data Visualization
+- SQL
+- Python
+- Excel
