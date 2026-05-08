@@ -1,20 +1,3 @@
-# Repository Name
-
-adventure-works-executive-sales-analytics-dashboard
-
----
-
-# Project Title
-
-Adventure Works Executive Sales & Customer Analytics Dashboard
-
----
-
-# Repository Description
-
-Interactive executive-level Power BI dashboard built using the Adventure Works dataset to analyze sales performance, customer insights, payment behavior, product category trends, KPI metrics, and operational order activity using DAX, data modeling, and business intelligence reporting techniques.
-
----
 
 # Adventure Works Executive Sales & Customer Analytics Dashboard
 
